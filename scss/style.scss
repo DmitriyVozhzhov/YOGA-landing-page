@@ -1,0 +1,222 @@
+@import url(../css/initial.css);
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: flex-end;
+  background-color: #fff;
+  box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.15);
+  .header_logo {
+    position: absolute;
+    top: 16px;
+    left: 116px;
+  }
+  justify-content: center;
+}
+.header__burger {
+  display: none;
+  position: relative;
+}
+.header__menu {
+}
+
+.header__list {
+  display: flex;
+  position: relative;
+  margin-right: 20px;
+}
+.header__list li {
+  list-style: none;
+  margin: 0px 0px 0px 20px;
+}
+.header__link {
+  color: #555555;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+    top: 0px;
+    right: 15px;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    background-color: #395263;
+    padding: 70px 10px 20px 10px;
+  }
+
+  .header__menu.active {
+    top: 0;
+  }
+
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin: 0px 0px 20px 0px;
+  }
+  .header__link {
+    font-size: 24px;
+  }
+}
+.section_1 {
+  display: flex;
+  background-image: url(../images/bg-01.jpg);
+  height: 600px;
+  width: 100%;
+  opacity: 0.8;
+  background-color: #5363db;
+  justify-content: center;
+  align-items: center;
+  .section_1_form {
+    width: 300px;
+    height: 391px;
+    background-color: #fff;
+  }
+  .section_1_text {
+    padding-left: 40px;
+    h2 {
+      font-family: "Open Sans";
+      font-size: 48px;
+      line-height: 72px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    p {
+      font-family: "Dancing Script", cursive;
+      font-size: 40px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffffff;
+    }
+  }
+}
+.section_2 {
+  display: flex;
+  width: 100%;
+  height: 1120px;
+  .section_2_text {
+    height: 250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h3 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5b6ceb;
+  }
+  p {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 41px;
+    line-height: 61px;
+    font-weight: 400;
+    color: #777777;
+  }
+}
+.section_2_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section_2_card_1 {
+  width: 570px;
+  height: 300px;
+  margin: 15px 25px;
+  display: flex;
+  .section_2_card_1-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-family: "Open Sans";
+      font-size: 20px;
+      line-height: 45px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #777777;
+    }
+    p {
+      font-family: "Open Sans";
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #555555;
+    }
+  }
+}
+.section_3 {
+  .Photo_Block-1 {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+  }
+  .Photo_Block-2 {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+  }
+}
