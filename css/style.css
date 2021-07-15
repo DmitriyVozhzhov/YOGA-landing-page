@@ -143,7 +143,7 @@
   display: -ms-flexbox;
   display: flex;
   background-image: url(../images/bg-01.jpg);
-  height: 600px;
+  height: auto;
   width: 100%;
   opacity: 0.8;
   background-color: #5363db;
@@ -220,6 +220,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 450;
 }
 
 .section_2_card_1 {
@@ -259,6 +260,11 @@
   color: #555555;
 }
 
+.section_3 {
+  width: 100%;
+  height: auto;
+}
+
 .section_3 .Photo_Block-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,16 +273,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 25%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.section_3 .Photo_Block-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.section_3 .section3-ph {
   width: 25%;
 }
