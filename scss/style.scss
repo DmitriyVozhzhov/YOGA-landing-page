@@ -121,10 +121,9 @@
 }
 .section_1 {
   display: flex;
-  background-image: url(../images/bg-01.jpg);
+  background: url(../images/bg-01.jpg) no-repeat center;
   height: auto;
   width: 100%;
-  opacity: 0.8;
   background-color: #5363db;
   justify-content: center;
   align-items: center;
@@ -272,7 +271,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding: 100px 0px;
   .section_4-text {
     width: 50%;
     padding: 20px;
@@ -302,17 +301,21 @@
 .section_5 {
   width: 100%;
   height: auto;
-  background-color: #5363db;
+  background: url(/images/bg-02.jpg) no-repeat #5363db;
+  background-size: auto;
+
+  opacity: 0.9;
 
   .section_5-allcard {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 100px 10px;
-    margin: 10px;
+    padding: 100px 0;
     justify-content: center;
     align-content: center;
     align-items: center;
+    background-color: #5363db;
+    opacity: 0.6;
   }
   .section_5card {
     width: 22%;
@@ -350,7 +353,6 @@
   }
 }
 .section_6 {
-  padding: 40px 0;
   .section_6-allcard {
     display: flex;
     flex-direction: row;
@@ -358,11 +360,12 @@
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    background-image: url(/images/bg-03.jpg);
+    background: url(/images/bg-03.jpg) no-repeat center;
     width: 100%;
     height: auto;
     .section6-card1 {
       width: 26%;
+      margin: 40px 0;
     }
     @media (max-width: 767px) {
       .section6-card1 {
