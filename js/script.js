@@ -1,5 +1,6 @@
-$(document).ready(function(){
-  $('.section_4-img').slick({
-    setting-name: setting-value
-  });
+$(document).ready(function() {
+	$('.header__burger').click(function(event) {
+		$('.header__burger,.header__menu').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
 });
